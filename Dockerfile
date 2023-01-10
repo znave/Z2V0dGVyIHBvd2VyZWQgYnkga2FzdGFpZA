@@ -40,6 +40,7 @@ RUN set -ex \
         cairosvg \
         libjpeg-dev \
         libpng-dev \
+        libnss3 \
         unzip \
         build-essential \
     && localedef -i en_US -c -f UTF-8 -A /usr/share/locale/locale.alias en_US.UTF-8 \
@@ -68,4 +69,4 @@ RUN set -ex \
     && apt-get -qqy clean \
     && rm -rf -- ~/.cache /var/lib/apt/lists/* /var/cache/apt/archives/* /etc/apt/sources.list.d/* /usr/share/man/* /usr/share/doc/* /var/log/* /tmp/* /var/tmp/* ~/.npm
 
-CMD ["python3", "-m", "getter"]
+CMD ["/bin/bash", "start.sh"]

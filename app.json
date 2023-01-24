@@ -47,8 +47,6 @@
         }
     ],
     "formation": {
-        "worker": {
-            "quantity": 1
-        }
+        "worker": {}
     }
 }

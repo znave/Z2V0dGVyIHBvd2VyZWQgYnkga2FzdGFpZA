@@ -46,7 +46,5 @@
             }
         }
     ],
-    "formation": {
-        "worker": {}
-    }
+    "formation": "worker"
 }
